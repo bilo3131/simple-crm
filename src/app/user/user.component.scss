@@ -3,3 +3,47 @@
     right: 56px;
     bottom: 56px;
 }
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+        border-bottom: 1px solid #ffffffb3;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: rgba(195, 195, 195, 0.1);
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+        
+        &:first-child {
+            cursor: unset;
+            background-color: unset;
+        }
+    }
+
+    td {
+        height: 48px;
+
+        
+        &:first-child {
+            padding-left: 16px;
+        }
+    }
+
+    th {
+        color: #ffffffb3;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: start;
+        height: 48px;
+
+        &:first-child {
+            padding-left: 16px;
+        }
+    }
+}
